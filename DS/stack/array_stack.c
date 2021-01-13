@@ -59,11 +59,12 @@ int pop(Stack* stack) {
 
 void main() 
 {
-  Stack* stack = createStack(6);
+  Stack* stack = createStack(3);
   
   push(stack, 1);
   push(stack, 2);
   push(stack, 3);
+  push(stack, 4);
   
   printf("%d poped from stack\n", pop(stack));
 }
