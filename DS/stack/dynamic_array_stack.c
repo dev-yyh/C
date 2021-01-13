@@ -50,7 +50,7 @@ void push(Stack *stack, int data) {
 /* 스택에 값을 삭제하는 함수 */
 int pop(Stack* stack) {
   if (isEmpty(stack)) {
-    printf("Stack is empty");
+    printf("Stack is empty\n");
     return INT_MIN;
   }
   else /* top의 값을 1 감소시킴 */
