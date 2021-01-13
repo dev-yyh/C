@@ -39,7 +39,7 @@ int peek (Stack* stack) {
 /* 스택에 값을 추가하는 함수 */
 void push(Stack *stack, int data) {
   if (isFull(stack))
-    printf("Stack is full");
+    printf("Stack is full\n");
   else {
      /* top을 1증가시키고 값을 top에 저장함 */
     stack->array[++stack->top] = data;
@@ -50,7 +50,7 @@ void push(Stack *stack, int data) {
 /* 스택에 값을 삭제하는 함수 */
 int pop(Stack* stack) {
   if (isEmpty(stack)) {
-    printf("Stack is empty");
+    printf("Stack is empty\n");
     return INT_MIN;
   }
   else /* top의 값을 1 감소시킴 */
