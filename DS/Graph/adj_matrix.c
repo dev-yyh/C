@@ -3,7 +3,7 @@
 
 typedef struct Graph {
   int vertexNumber;
-  int** adj;
+  int** adj; // 2차원 배열을 저장하기 위한 공간
 } Graph;
 
 // n개의 정점을 가진 Grpah를 만든다.
@@ -19,6 +19,7 @@ Graph* createGraph(int n) {
     G->adj[i] = malloc(sizeof(int) * n);
   }
 
+// 그래프 초기화
   for (i=0; i < n; i++) {
     for (j=0; j < n; j++) {
       G->adj[i][j] = 0;
