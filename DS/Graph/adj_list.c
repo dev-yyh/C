@@ -13,7 +13,7 @@ typedef struct AdjList {
 
 typedef struct Graph {
   int vertexNumber;
-  AdjList* adj;
+  AdjList* adj; // 인접한 정점을 저장하기 위한 공간
 } Graph;
 
 // n개의 정점을 가진 Grpah를 만든다.
